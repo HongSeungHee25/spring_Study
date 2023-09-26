@@ -8,17 +8,18 @@
 	<title>우리 북카페</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" 
-		href="${pageContext.request.contextPath }/css/community.css?v=3"> 
+		href="${pageContext.request.contextPath }/resources/css/community.css?v=3"> 
 </head>
 <body>
 			<main id="write">
 			<h3>북챗 :: 커뮤니티</h3>
 			<p>오늘 무슨 책을 읽으셨나요? </p>
 			<hr style="color:white;">
-<form name="frm1" method="post" action="updateAction.jsp" >  
+<form name="frm1" method="post" action="save" >  
 						<!--onsubmit="return isValid()" 방법도 있음.  -->
 	<input type="hidden" name="idx" value="${vo.idx }">
 	<input type="hidden" name="page" value="${page}">    
+	<input type="hidden" name="ip" value="${pageContext.request.remoteAddr }">
 	<!-- 현재페이지 번호 전달 - 순서5) post 로 전달해야 하므로 hidden type으로 저장 -->
  <table>
  	<tr><th>제목</th>

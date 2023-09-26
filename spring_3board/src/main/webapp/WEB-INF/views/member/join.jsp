@@ -13,8 +13,9 @@
 	<!-- <input type="text" name = "username" value="테스트용"> -->
 	<input type="text" name = "id" placeholder="id 입력하세요."> <br>
 	<input type="text" name = "name" placeholder="이름 입력하세요."><br>
-	<input type="text" name = "birth" placeholder="생년월일 입력하세요."><br>
-	<input type="text" name = "address" placeholder="주소 입력하세요."><br>
+	<input type="text" name = "email" placeholder="이메일 입력하세요."><br>
+	<input type="number" name = "age"><br>
+	<input type="password" name = "password" placeholder="비밀번호 입력하세요."><br>
 	<button>등록</button>  <!-- submit 버튼 -->
 </form>
 <a href="../">홈</a>
