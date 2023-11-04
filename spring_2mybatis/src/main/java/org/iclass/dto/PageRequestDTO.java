@@ -18,7 +18,7 @@ public class PageRequestDTO {
 	
 	private int page =1;
 	
-	private int size=5;      //size 는 한 개 페이지 글 갯수
+	private int size=10;      //size 는 한 개 페이지 글 갯수
 	
 		
 	private int start;		//페이지 시작 글번호 rownum

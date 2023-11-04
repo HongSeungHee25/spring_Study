@@ -24,7 +24,7 @@ public class MemberController {
 	@PostMapping("/save")
 	public String join(BookUser dto,RedirectAttributes redirectAttributes) {
 		service.join(dto);
-	redirectAttributes.addFlashAttribute("message","회원가입이 완료되었습니다.");
+		redirectAttributes.addFlashAttribute("message","회원가입이 완료되었습니다.");
 	
 	return "redirect:/login";
 	}
